@@ -1,0 +1,19 @@
+{
+  "name": "@doinstruct/functions",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.137",
+    "@types/node": "^20.12.7",
+    "sst": "^2.41.4",
+    "vitest": "^1.5.2"
+  },
+  "dependencies": {
+    "json-2-csv": "^5.5.1",
+    "lambda-multipart-parser": "^1.0.1"
+  }
+}
