@@ -6,9 +6,21 @@
     "test": "sst bind vitest",
     "typecheck": "tsc -noEmit"
   },
+  "dependencies": {
+    "aws-lambda": "^1.0.7",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "json-2-csv": "^5.5.1",
+    "lambda-multipart-parser": "^1.0.1",
+    "libphonenumber-js": "^1.10.61",
+    "uuid": "^9.0.1"
+  },
   "devDependencies": {
-    "vitest": "^1.5.2",
-    "@types/node": "^20.12.7",
-    "sst": "^2.41.4"
+    "vitest": "^1.5.3",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.12.10",
+    "@types/uuid": "^9.0.8",
+    "sst": "^2.41.5"
   }
 }

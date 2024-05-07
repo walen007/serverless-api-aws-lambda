@@ -13,7 +13,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: [],
-  ignorePatterns: [, 'services/migrations/*', '.eslintrc.cjs', '**/*test*', '*.d.ts', 'dist'],
+  ignorePatterns: ['.eslintrc.cjs', '*.mjs', '*.test.ts'],
   rules: {
     '@typescript-eslint/ban-types': 'warn',
     '@typescript-eslint/explicit-module-boundary-types': 'warn',

@@ -1,6 +1,7 @@
 {
-  "name": "doinstruct",
-  "description": "doInstruct Employee Management System",
+  "name": "doinstruct-coding-challenge-aws-lambda-postgres-rds-sqs-jwt",
+  "description": "doinstruct Employee Management System - Coding Challenge",
+  "author": "Adebowale Akinola <adebowalen@yahoo.com>",
   "version": "0.6.5",
   "private": true,
   "type": "module",
@@ -13,12 +14,18 @@
     "deploy": "sst deploy",
     "nuke": "sst remove",
     "console": "sst console",
-    "typecheck": "tsc --noEmit"
+    "faker": "node ./scripts/generate-employees.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
     "@tsconfig/node18": "^18.2.4",
+    "@types/jest": "^29.5.12",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
+    "@vitest/coverage-v8": "^1.6.0",
     "aws-cdk-lib": "2.132.1",
     "constructs": "10.3.0",
     "eslint": "8.56.0",
@@ -26,7 +33,11 @@
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-prettier": "5.1.3",
     "prettier": "3.2.4",
-    "sst": "^2.41.4",
-    "typescript": "^5.4.5"
+    "sst": "^2.41.5",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-sso-oidc": "^3.565.0"
   }
 }

@@ -17,3 +17,7 @@ node_modules
 
 .dev_tools
 TODO.md
+
+.env
+cdk.context.json
+coverage/

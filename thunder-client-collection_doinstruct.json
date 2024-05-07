@@ -1,0 +1,251 @@
+{
+  "clientName": "Thunder Client",
+  "collectionName": "doinstruct",
+  "collectionId": "febffd71-1cc6-4225-b10e-fba414ee7942",
+  "dateExported": "2024-05-07T14:23:29.585Z",
+  "version": "1.2",
+  "folders": [],
+  "requests": [
+    {
+      "_id": "298c7d04-073c-486f-8d7d-0e319c4f0c8a",
+      "colId": "febffd71-1cc6-4225-b10e-fba414ee7942",
+      "containerId": "",
+      "name": "migrations",
+      "url": "{{LAMBDA_URL}}/db/migrations/down",
+      "method": "PUT",
+      "sortNum": 6562.5,
+      "created": "2024-05-03T11:31:41.849Z",
+      "modified": "2024-05-06T21:11:53.284Z",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "{{USER_AGENT}}"
+        }
+      ],
+      "auth": {
+        "type": "bearer",
+        "bearer": "{{ACCESS_TOKEN}}"
+      }
+    },
+    {
+      "_id": "bc4e1617-207f-45c6-b03d-3c68b79f3a28",
+      "colId": "febffd71-1cc6-4225-b10e-fba414ee7942",
+      "containerId": "",
+      "name": "register",
+      "url": "{{LAMBDA_URL}}/customer/register",
+      "method": "POST",
+      "sortNum": 13125,
+      "created": "2024-05-03T11:50:36.016Z",
+      "modified": "2024-05-06T21:11:41.468Z",
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "{{USER_AGENT}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"customer_name\":\"Unicorn Startup GmbH\",\n  \"email\":\"me+test1@waleakinola.com\",\n  \"password\":\"supersecretpassword\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "ad66acb8-d947-46d9-abd6-e10cb2d39f3e",
+      "colId": "febffd71-1cc6-4225-b10e-fba414ee7942",
+      "containerId": "",
+      "name": "login",
+      "url": "{{LAMBDA_URL}}/customer/login",
+      "method": "POST",
+      "sortNum": 19687.5,
+      "created": "2024-05-03T11:54:42.244Z",
+      "modified": "2024-05-06T21:12:04.548Z",
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "{{USER_AGENT}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"email\":\"me+test1@waleakinola.com\",\n  \"password\":\"supersecretpassword\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "ef082f85-f705-4463-adcc-8088d5737e1c",
+      "colId": "febffd71-1cc6-4225-b10e-fba414ee7942",
+      "containerId": "",
+      "name": "upload",
+      "url": "{{LAMBDA_URL}}/employees/upload",
+      "method": "POST",
+      "sortNum": 52500,
+      "created": "2024-05-03T23:43:07.570Z",
+      "modified": "2024-05-07T14:18:12.295Z",
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "{{USER_AGENT}}"
+        }
+      ],
+      "body": {
+        "type": "formdata",
+        "raw": "",
+        "form": [],
+        "files": [
+          {
+            "name": "file",
+            "value": "/home/workspace/doinstruct/scripts/samples/employees-100.json"
+          }
+        ]
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": "{{ACCESS_TOKEN}}"
+      }
+    },
+    {
+      "_id": "8fd34792-a86a-4813-861e-73b8a7c49910",
+      "colId": "febffd71-1cc6-4225-b10e-fba414ee7942",
+      "containerId": "",
+      "name": "report",
+      "url": "{{LAMBDA_URL}}/report/d18d0c44-9369-4f23-bc3f-0d6957f5beba",
+      "method": "GET",
+      "sortNum": 62500,
+      "created": "2024-05-03T23:48:11.600Z",
+      "modified": "2024-05-07T14:19:02.348Z",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "{{USER_AGENT}}"
+        }
+      ],
+      "auth": {
+        "type": "bearer",
+        "bearer": "{{ACCESS_TOKEN}}"
+      }
+    },
+    {
+      "_id": "0d91333a-875e-4093-972a-b3144f4a4419",
+      "colId": "febffd71-1cc6-4225-b10e-fba414ee7942",
+      "containerId": "",
+      "name": "reports",
+      "url": "{{LAMBDA_URL}}/reports",
+      "method": "GET",
+      "sortNum": 67500,
+      "created": "2024-05-03T00:24:50.160Z",
+      "modified": "2024-05-06T21:14:54.900Z",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "{{USER_AGENT}}"
+        }
+      ],
+      "auth": {
+        "type": "bearer",
+        "bearer": "{{ACCESS_TOKEN}}"
+      }
+    },
+    {
+      "_id": "fd26c0c8-01dd-4ca2-9a7f-da9de6895f45",
+      "colId": "febffd71-1cc6-4225-b10e-fba414ee7942",
+      "containerId": "",
+      "name": "get employee",
+      "url": "{{LAMBDA_URL}}/employee/57e853393ee247c0929a6cc05b8804974",
+      "method": "GET",
+      "sortNum": 77500,
+      "created": "2024-05-04T11:43:47.084Z",
+      "modified": "2024-05-07T14:15:03.982Z",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "{{USER_AGENT}}"
+        }
+      ],
+      "auth": {
+        "type": "bearer",
+        "bearer": "{{ACCESS_TOKEN}}"
+      }
+    },
+    {
+      "_id": "94218970-3d10-4f60-aa4c-d328b54b8a11",
+      "colId": "febffd71-1cc6-4225-b10e-fba414ee7942",
+      "containerId": "",
+      "name": "get employees",
+      "url": "{{LAMBDA_URL}}/employees/5",
+      "method": "GET",
+      "sortNum": 80000,
+      "created": "2024-05-04T16:00:49.918Z",
+      "modified": "2024-05-07T14:19:50.315Z",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "{{USER_AGENT}}"
+        }
+      ],
+      "auth": {
+        "type": "bearer",
+        "bearer": "{{ACCESS_TOKEN}}"
+      }
+    },
+    {
+      "_id": "d8d575f5-f01b-43eb-b396-4aa1e69a8e74",
+      "colId": "febffd71-1cc6-4225-b10e-fba414ee7942",
+      "containerId": "",
+      "name": "update employee",
+      "url": "{{LAMBDA_URL}}/employee/e60f1eaad5734d6bb74e81a7de30d13e",
+      "method": "PUT",
+      "sortNum": 82500,
+      "created": "2024-05-04T13:22:42.841Z",
+      "modified": "2024-05-06T21:15:15.901Z",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "{{USER_AGENT}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"last_name\": \"Swankell\"\n}",
+        "form": []
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": "{{ACCESS_TOKEN}}"
+      }
+    },
+    {
+      "_id": "808fefa6-d660-4274-89a3-d3e2e376d9f4",
+      "colId": "febffd71-1cc6-4225-b10e-fba414ee7942",
+      "containerId": "",
+      "name": "delete employee",
+      "url": "{{LAMBDA_URL}}/employee/0fe74cc751f54effadc7739cd7b61a91",
+      "method": "DELETE",
+      "sortNum": 87500,
+      "created": "2024-05-04T13:21:52.178Z",
+      "modified": "2024-05-07T14:22:13.996Z",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "{{USER_AGENT}}"
+        }
+      ],
+      "auth": {
+        "type": "bearer",
+        "bearer": "{{ACCESS_TOKEN}}"
+      }
+    }
+  ],
+  "ref": "dVxZgz3zIeXXnD0dKsj9C8d2HxZk36EcxlIZLNJrhthE-upmR8TnvN0ZmkRP57zQjDI7a5yDeWPLuyUICySWow"
+}

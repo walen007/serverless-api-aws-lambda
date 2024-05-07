@@ -12,3 +12,15 @@ export enum HttpStatus {
   TOO_MANY_REQUESTS = 429,
   INTERNAL_SERVER_ERROR = 500,
 }
+
+export interface ILambdaResponse {
+  statusCode: HttpStatus;
+  body: string;
+}
+
+export interface IPayload {
+  customer_id: string;
+  email: string;
+  iat: number;
+  exp: number;
+}
