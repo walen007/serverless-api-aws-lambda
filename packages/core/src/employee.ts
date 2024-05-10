@@ -12,7 +12,7 @@ import {
   updateEmployeeRecord,
   deleteEmployeeRecord,
   getEmployeeRecordsPage,
-} from '../src/persistence';
+} from './persistence';
 import { logger } from './lib/logger';
 import { saveQueueMessage } from './queue';
 

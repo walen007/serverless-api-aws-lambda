@@ -1,0 +1,38 @@
+{
+  "version": "2.0",
+  "routeKey": "POST /customer/login",
+  "rawPath": "/customer/login",
+  "rawQueryString": "",
+  "headers": {
+    "accept": "application/json",
+    "accept-encoding": "gzip, deflate, br",
+    "content-length": "76",
+    "content-type": "application/json",
+    "host": "6jzk7277m7.execute-api.eu-central-1.amazonaws.com",
+    "user-agent": "doinstruct-Client v2.5",
+    "x-amzn-trace-id": "Root=1-663946f4-58558c154a5690b23358ed9a",
+    "x-forwarded-for": "176.0.204.104",
+    "x-forwarded-port": "443",
+    "x-forwarded-proto": "https"
+  },
+  "requestContext": {
+    "accountId": "964849715044",
+    "apiId": "6jzk7277m7",
+    "domainName": "6jzk7277m7.execute-api.eu-central-1.amazonaws.com",
+    "domainPrefix": "6jzk7277m7",
+    "http": {
+      "method": "POST",
+      "path": "/customer/login",
+      "protocol": "HTTP/1.1",
+      "sourceIp": "176.0.204.104",
+      "userAgent": "doinstruct-Client v2.5"
+    },
+    "requestId": "XXgGLi0BliAEJKQ=",
+    "routeKey": "POST /customer/login",
+    "stage": "$default",
+    "time": "06/May/2024:21:09:08 +0000",
+    "timeEpoch": 1715029748003
+  },
+  "body": "{\n  \"email\":\"me+test1@waleakinola.com\",\n  \"password\":\"supersecretpassword\"\n}",
+  "isBase64Encoded": false
+}

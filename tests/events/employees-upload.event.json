@@ -1,0 +1,39 @@
+{
+  "version": "2.0",
+  "routeKey": "POST /employees/upload",
+  "rawPath": "/employees/upload",
+  "rawQueryString": "",
+  "headers": {
+    "accept": "application/json",
+    "accept-encoding": "gzip, deflate, br",
+    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lcl9pZCI6IjI5YjIxNTY0ODQ4NjRkMTRhYzUwOTMzOTg3ZDRiNGVkIiwiZW1haWwiOiJ3YWxlK3Rlc3Q0QG1heWZydWl0LmRlIiwiaWF0IjoxNzE1MDI5MTM5LCJleHAiOjE3MTUwMzI3Mzl9.Yz6RhuzmdlywCV2zMLlAHPZoNMKtOnYEvMHWYdawl0s",
+    "content-length": "582",
+    "content-type": "multipart/form-data; boundary=--------------------------374634162533996691687279",
+    "host": "6jzk7277m7.execute-api.eu-central-1.amazonaws.com",
+    "user-agent": "doinstruct-Client v2.5",
+    "x-amzn-trace-id": "Root=1-66394954-53a16a122df1852141469955",
+    "x-forwarded-for": "176.0.204.104",
+    "x-forwarded-port": "443",
+    "x-forwarded-proto": "https"
+  },
+  "requestContext": {
+    "accountId": "964849715044",
+    "apiId": "6jzk7277m7",
+    "domainName": "6jzk7277m7.execute-api.eu-central-1.amazonaws.com",
+    "domainPrefix": "6jzk7277m7",
+    "http": {
+      "method": "POST",
+      "path": "/employees/upload",
+      "protocol": "HTTP/1.1",
+      "sourceIp": "176.0.204.104",
+      "userAgent": "doinstruct-Client v2.5"
+    },
+    "requestId": "XXhlSh4mFiAEJxw=",
+    "routeKey": "POST /employees/upload",
+    "stage": "$default",
+    "time": "06/May/2024:21:19:16 +0000",
+    "timeEpoch": 1715030356755
+  },
+  "body": "LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLTM3NDYzNDE2MjUzMzk5NjY5MTY4NzI3OQ0KQ29udGVudC1EaXNwb3NpdGlvbjogZm9ybS1kYXRhOyBuYW1lPSJmaWxlIjsgZmlsZW5hbWU9ImVtcGxveWVlcy01LmNzdiINCkNvbnRlbnQtVHlwZTogdGV4dC9jc3YNCg0KZW1wbG95ZWVfaWQsZmlyc3RfbmFtZSxsYXN0X25hbWUsdGVsZXBob25lCmJjNzJjNDY1MGFjMTQ2MDViNDRhY2U4MDU4NDlhNzU2MSxIYXJyaXNvbixQb2xsaWNoLCs0OTgyMjM5OTA3MDg5MQphMzhmZjQ4ZjZiNTQ0MTIzOTRmZjgyNWYzMGYxMGU3YzIsSmVzdXMsR3VsZ293c2tpLCs0OTU4NjY1MjI4MTU4MgpmYjBlMzkwOTdlNTc0NjNmYWEwYjJjMWU5YWFmY2IxMDMsQW5uYWJlbGwsQmVlciwrNDk5Mjc1MDc1NjA2MTczCjU3ZTg1MzM5M2VlMjQ3YzA5MjlhNmNjMDViODgwNDk3NCxGbG9yaWFuLFdpc29reSwrNDk1ODY5NDEwODQxOTQKZDg2ZWYzMzQyODFjNDk5YTgxYTU0MTg5YmZmZTc5YWI1LEdlcmFsZCxNY0tlbnppZSwrNDkzOTE0NTAxODEwNTUNCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0zNzQ2MzQxNjI1MzM5OTY2OTE2ODcyNzktLQ0K",
+  "isBase64Encoded": true
+}
