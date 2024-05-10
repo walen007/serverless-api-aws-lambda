@@ -4,7 +4,7 @@ import { APIGatewayProxyResultV2 } from 'aws-lambda';
 import { HttpStatus, ICredential, ICustomer } from '../../types';
 import { generateJwtToken } from './auth/jwt';
 import { isValidCustomer } from './lib/validator';
-import { insertCustomer, selectCustomer } from './persistence';
+import { persistence } from './persistence';
 import { logger } from './lib/logger';
 
 const BCRYPT_SALT_ROUNDS = Number(process.env.BCRYPT_SALT_ROUNDS) || 10;
@@ -12,7 +12,7 @@ const BCRYPT_SALT_ROUNDS = Number(process.env.BCRYPT_SALT_ROUNDS) || 10;
 export const login = async (credential: ICredential): Promise<APIGatewayProxyResultV2<never>> => {
   try {
     if (credential?.email?.length) {
-      const customer = await selectCustomer(credential.email);
+      const customer = await persistence.selectCustomer(credential.email);
 
       if (!customer) return { statusCode: HttpStatus.UNAUTHORIZED, body: JSON.stringify({ message: 'Invalid login' }) };
 
@@ -46,7 +46,7 @@ export const register = async (customer: ICustomer): Promise<APIGatewayProxyResu
     customer.password = bcrypt.hashSync(customer.password, salt);
 
     if (isValidCustomer(customer)) {
-      await insertCustomer(customer);
+      await persistence.insertCustomer(customer);
 
       return {
         statusCode: HttpStatus.CREATED,
