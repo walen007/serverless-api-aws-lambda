@@ -1,6 +1,6 @@
-# Serverless API Application - Mini Employee Management System
+# Serverless API Application - Employee Management System (Mini)
 
-Serverless API Application using SST, AWS Lambda, API Gateway, RDS Postgres, SQS and JWT Authorization
+Serverless API Application using Node.js, SST, AWS Lambda, API Gateway, RDS Postgres, SQS and JWT Authorization
 
 This project demonstrates:
 
@@ -43,9 +43,3 @@ This project demonstrates:
 ## Dev Environment
 
 This project was developed in VS Code IDE with Vitest, ESLint, Prettier plugin and Thunder Client plugin
-<br><br>
-
-### Miscellaneous
-
-- Unit test is pending and will be added. I have struggles with SST to implement stand-alone tests during my alloted time
-- I took the liberty to assume that I have discussed with the rest of the team (Product Manager, Devs etc) that the initial requirement did not implement the app to a usable state and I have been authorized to implement (registration, login, employee retrieval, manpulations etc) in the second iteration of the app which is already included in this app.

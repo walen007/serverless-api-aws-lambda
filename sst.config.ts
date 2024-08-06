@@ -1,7 +1,7 @@
 import { SSTConfig } from 'sst';
 import { ApiStack, QueueStack, StorageStack, DBStack } from './stacks';
 
-const AWS_SERVERLESS_APP = process.env.AWS_SERVERLESS_APP || 'doinstruct';
+const AWS_SERVERLESS_APP = process.env.AWS_SERVERLESS_APP || 'serverless-api';
 const AWS_SERVERLESS_STAGE = process.env.AWS_SERVERLESS_STAGE || 'development';
 const AWS_REGION = process.env.AWS_REGION || 'eu-central-1';
 

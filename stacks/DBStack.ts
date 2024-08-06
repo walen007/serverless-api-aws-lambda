@@ -5,7 +5,7 @@ export function DBStack({ app, stack }: StackContext): { postgres: RDS } {
 
   const postgres = new RDS(stack, 'Cluster', {
     engine: 'postgresql13.9',
-    defaultDatabaseName: 'doinstruct',
+    defaultDatabaseName: 'serverless-api',
     migrations: 'packages/core/src/persistence/migrations',
     scaling: {
       autoPause: !isProduction,

@@ -10,7 +10,7 @@
     "content-length": "582",
     "content-type": "multipart/form-data; boundary=--------------------------374634162533996691687279",
     "host": "6jzk7277m7.execute-api.eu-central-1.amazonaws.com",
-    "user-agent": "doinstruct-Client v2.5",
+    "user-agent": "serverless-api-Client v2.5",
     "x-amzn-trace-id": "Root=1-66394954-53a16a122df1852141469955",
     "x-forwarded-for": "176.0.204.104",
     "x-forwarded-port": "443",
@@ -26,7 +26,7 @@
       "path": "/employees/upload",
       "protocol": "HTTP/1.1",
       "sourceIp": "176.0.204.104",
-      "userAgent": "doinstruct-Client v2.5"
+      "userAgent": "serverless-api-Client v2.5"
     },
     "requestId": "XXhlSh4mFiAEJxw=",
     "routeKey": "POST /employees/upload",

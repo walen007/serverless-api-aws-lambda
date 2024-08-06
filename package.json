@@ -1,6 +1,6 @@
 {
-  "name": "doinstruct-coding-challenge-aws-lambda-postgres-rds-sqs-jwt",
-  "description": "doinstruct Employee Management System - Coding Challenge",
+  "name": "serverless-api-aws-lambda",
+  "description": "Serverless API Application using Node.js, SST, AWS Lambda, API Gateway, RDS Postgres, SQS and JWT Authorization",
   "author": "Adebowale Akinola <adebowalen@yahoo.com>",
   "version": "0.6.5",
   "private": true,

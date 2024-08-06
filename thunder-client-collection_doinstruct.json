@@ -1,6 +1,6 @@
 {
   "clientName": "Thunder Client",
-  "collectionName": "doinstruct",
+  "collectionName": "serverless-api",
   "collectionId": "febffd71-1cc6-4225-b10e-fba414ee7942",
   "dateExported": "2024-05-07T14:23:29.585Z",
   "version": "1.2",
@@ -106,7 +106,7 @@
         "files": [
           {
             "name": "file",
-            "value": "/home/workspace/doinstruct/scripts/samples/employees-100.json"
+            "value": "/home/workspace/serverless-api/scripts/samples/employees-100.json"
           }
         ]
       },
